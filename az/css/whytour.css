@@ -1,0 +1,21 @@
+.why-tour-left{
+  position: absolute;
+  left: 0;
+  top: 200px;
+}
+
+.why-tour-right{
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+}
+
+@media screen and (max-width: 450px){
+  .why-tour-right{
+    display: none;
+  }
+  
+  .why-tour-left{
+    display: none;
+  }
+}

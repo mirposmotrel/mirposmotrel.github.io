@@ -1,0 +1,82 @@
+.cost-item{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 310px;
+  margin-left: 20px;
+}
+
+.cost-numb{
+  font-family: acrobat;
+  font-size: 150px;
+  color: #333333;
+}
+
+.cost-desc{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 20px;
+  padding-top: 20px;
+}
+
+.cost-desc-desc{
+  font-size: 19px;
+  color: #333333;
+  font-family: acrobat;
+}
+
+.cost-items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.cost-title{
+  font-family: acrobat-bold;
+  font-size: 50px;
+  color: #333333;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.cost-title-button{
+  text-align: center;
+  padding-bottom: 180px;
+}
+
+.cost-title-button img{
+  max-width: 100%;
+}
+
+.cost-not-items{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.cost-not-items .cost-item{
+  margin-left: 80px;
+  margin-top: -40px;
+  width: 250px;
+}
+
+.section-heading.mt{
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 450px) {
+  .cost-numb{
+    font-size: 110px;
+  }
+  
+  .cost-desc-desc{
+    font-size: 15px;
+  }
+}

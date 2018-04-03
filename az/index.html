@@ -1,572 +1,772 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-<meta name="viewport" content="width=1260">
-<meta name="keywords" content="" />
-<meta name="description" content="Анастасия - Заядлая путешественница, за плечами 20 стран. Организовывает авторские туры в Грузию и Азербайджан" />
-<meta name="author" content="Анастасия">
+<html>
+    <head>
+        <title>Instatour</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta property="og:locale" content="ru_RU" />
-<meta property="og:title" content="Туры" />
-<meta property="og:url" content="http://mirposmotrel.icoach.io//grandtour/" />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="/images/icon/social_photo.jpg?2018033010001522393255" />
-
-<meta property="og:description" content="Анастасия - Заядлая путешественница, за плечами 20 стран. Организовывает авторские туры в Грузию и Азербайджан" />
-
-<link rel="image_src" href="/images/icon/social_photo.jpg?2018033010001522393255" />
-<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href = "css/font-awesome.min.css" rel = "stylesheet">
+        <link href = "css/all-min.css" rel = "stylesheet">
 
 
-    <title>Вся Грузия за 8 дней</title>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src = "js/slick.min.js"></script>
+        <script src = "js/main.js"></script>
+    </head>
+<body>
+    <header class = "container-fluid">
+        <div class = "container d-flex ai-center jc-center flex-col">
+            <div class = "header-phone">
+                <a href = "tel:+79319779155">+7 (931) 977-91-55</a>
+            </div>
 
-    <link href="/vendor/bootstrap/dist/toolkit-minimal.min.css" rel="stylesheet">
-    <link href="/vendor/libs.css" rel="stylesheet" >
-    <link href="/index.css?2018033010001522393255" rel="stylesheet">
+            <div class = "header-title">
+                Инстатур
+            </div>
+            <div class = "header-date">
+                21 мая - 26 мая, 10 июня - 16 июня
+            </div>
+            <div class = "header-button to-tour">
+                Записаться на тур
+            </div>
+        </div>
+        <div class = "separator-bottom">
+            <img src = "img/separator-bottom.png">
+        </div>
+    </header>
 
-    <!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '383767008718562');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=383767008718562&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
-    
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89298735-13"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <div class = "container-fluid">
+        <div class = "why-tour-left">
+            <img src = "img/why-tour-left.png">
+        </div>
+        <div class = "why-tour-right">
+            <img src = "img/why-tour-right.png">
+        </div>
+        <div class = "container">
+            <div class = "section-heading b">
+                Зачем ехать в инстатур?
+            </div>
 
-    gtag('config', 'UA-89298735-13');
-  </script>
+            <img src = "img/whytour-cards.png">
+        </div>
+    </div>
 
+    <div class = "container-fluid" id = "what-you-see">
+        <div class = "separator-top">
+            <img src = "img/separator-top.png">
+        </div>
+         <div class = "separator-bottom">
+            <img src = "img/separator-bottom.png">
+        </div>
+        <div class = "container">
+            <div class = "section-heading w">
+                Какие достопримечательности вы увидите:
+            </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-  </head>
-  <body class="ocean">
+            <div class = "wys-arrow wys-arrow-prev">
+                    <i class = "fa fa-angle-left"></i>
+                </div>
+            <div class = "wys-arrow wys-arrow-next">
+                    <i class = "fa fa-angle-right"></i>
+                </div>
+            <div class = "wys-container">
 
+                <div class = "wys-item">
+                    <div class = "wys-img">
+                        <img src = "img/baku-2337485.jpg">
+                    </div>
+                    <div class = "wys-title">
+                        Баку
+                    </div>
+                </div>
 
-	<!-- BEGIN header-main -->
-	<header class="header-main">
-		<div class="container">
-			<div class="header-main__row">
-				<div class="header-main__phone"><a href="tel:+79319779155">+7 (931) 977-91-55</a></div>
-				<div class="clearfix"></div>
-				<div class="header-main__title">
-					<h1>Вся Грузия за 8 дней</h1>
-				</div>
-				<div class="header-main__date">
-					9-17 июня, 24 июня — 1 июля
-				</div>
-				<button class="header__btn" type="button" data-toggle="modal" data-target="#modal" >Записаться на тур</button>
-			</div>
-		</div>
-	</header>
-	<!-- END header -->
-	<!-- BEGIN why -->
-	<div class="why">
-		<div class="container">
-			<h2>Зачем ехать в тур?</h2>
-			<div class="why__row row mob-slide">
-				<div class="why__card col-sm-6">
-					<figure>
-						<img src="/images/why-1.jpg" alt="why-1">
-						<figcaption>Увидите красивую природу Грузии: оргазм для глаз и вдохновение для души</figcaption>
-					</figure>
-				</div>
-				<div class="why__card col-sm-6">
-					<figure>
-						<img src="/images/why-2.jpg" alt="why-2">
-						<figcaption>Привезете домой тонну крутых фото: воспоминания на всю жизнь</figcaption>
-					</figure>
-				</div>
-				<div class="why__card col-sm-6">
-					<figure>
-						<img src="/images/why-3.jpg" alt="why-3">
-						<figcaption>Зарядитесь положительными эмоциями</figcaption>
-					</figure>
-				</div>
-				<div class="why__card col-sm-6">
-					<figure>
-						<img src="/images/why-4.jpg" alt="why-4">
-						<figcaption>Найдете новых друзей</figcaption>
-					</figure>
-				</div>
-				<div class="why__card col-sm-6">
-					<figure>
-						<img src="/images/why-5.jpg" alt="why-5">
-						<figcaption>Познакомитесь с национальными традициями и кухней Грузии</figcaption>
-					</figure>
-				</div>
-				<div class="why__card col-sm-6">
-					<figure>
-						<img src="/images/why-6.jpg" alt="why-6">
-						<figcaption>Просто круто проведете время</figcaption>
-					</figure>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- END why -->
-	<!-- BEGIN attract -->
-	<div class="attract">
-		<div class="container">
-			<h2>Какие достоприме&shy;чательности вы увидите:</h2>
-			<div class="attract__row row mob-slide">
-				<div class="attract__card col-sm-6 col-md-4 col-lg-3">
-					<figure>
-						<img src="/images/tbilisi.jpg" alt="tbilisi">
-						<figcaption>Тбилиси</figcaption>
-					</figure>
-				</div>
-				<div class="attract__card col-sm-6 col-md-4 col-lg-3">
-					<figure>
-						<img src="/images/mcheta.jpg" alt="mcheta">
-						<figcaption>Мцхета</figcaption>
-					</figure>
-				</div>
-				<div class="attract__card col-sm-6 col-md-4 col-lg-3">
-					<figure>
-						<img src="/images/kazbek.jpg" alt="kazbek">
-						<figcaption>Военно-грузинская дорога</figcaption>
-					</figure>
-				</div>
-				<div class="attract__card col-sm-6 col-md-4 col-lg-3">
-					<figure>
-						<img src="/images/mount-kazbek.jpg" alt="paravani">
-						<figcaption>Гора Казбек</figcaption>
-					</figure>
-				</div>
-				<div class="attract__card col-sm-6 col-md-4 col-lg-3">
-					<figure>
-						<img src="/images/vardzia.jpg" alt="vardzia">
-						<figcaption>Пещерный город Вардзия</figcaption>
-					</figure>
-				</div>
-				<div class="attract__card col-sm-6 col-md-4 col-lg-3">
-					<figure>
-						<img src="/images/ahalcihe.jpg" alt="ahalcihe">
-						<figcaption>Крепость Рабат в Ахалцихе</figcaption>
-					</figure>
-				</div>
-				<div class="attract__card col-sm-6 col-md-4 col-lg-3">
-					<figure>
-						<img src="/images/chkondiri.jpg" alt="chkondiri">
-						<figcaption>Мартвильские каньоны</figcaption>
-					</figure>
-				</div>
-				<div class="attract__card col-sm-6 col-md-4 col-lg-3">
-					<figure>
-						<img src="/images/prometej.jpg" alt="prometej">
-						<figcaption>Пещера Прометея</figcaption>
-					</figure>
-				</div>
-				<div class="attract__card col-sm-6 col-md-4 col-lg-3">
-					<figure>
-						<img src="/images/bagrata.jpg" alt="bagrata">
-						<figcaption>Каньон Окаце</figcaption>
-					</figure>
-				</div>
-				<div class="attract__card col-sm-6 col-md-4 col-lg-3">
-					<figure>
-						<img src="/images/batumi.jpg" alt="batumi">
-						<figcaption>Батуми</figcaption>
-					</figure>
-				</div>
-				<div class="attract__card col-sm-6 col-md-4 col-lg-3">
-					<figure>
-						<img src="/images/uplicihe.jpg" alt="uplicihe">
-						<figcaption>Пещерный город Уплисцихе</figcaption>
-					</figure>
-				</div>
-				<div class="attract__card col-sm-6 col-md-4 col-lg-3">
-					<figure>
-						<img src="/images/david.jpg" alt="david">
-						<figcaption>Кахетия: Сигнахи, озеро Кварели</figcaption>
-					</figure>
-				</div>
-			</div>
-			<button class="attract__order order-link" type="button" data-toggle="modal" data-target="#modal">
-				Записаться на тур
-			</button>
-		</div>
-	</div>
-	<!-- END attract -->
-	<!-- BEGIN appartment -->
-	<div class="appartment">
-		<div class="container">
-			<div class="appartment__header">
-				<h2>Где будете проживать?</h2>
-				<p>Двух, трех, четырехзвездочные отели в Тбилиси и Батуми. Апартаменты и гостевой дом вип-класса в Боржоми.
-					<br> В вашем распоряжении 2х-местные номера с односпальными кроватями.</p>
-			</div>
-			<div class="appartment__two row">
-				<div class="appartment__item col-md-6"><img src="/images/hotel-2.jpg" alt="hotel-1"></div>
-				<div class="appartment__item col-md-6"><img src="/images/hotel-3.jpg" alt="hotel-1"></div>
-			</div>
-			<div class="appartment__three row">
-				<div class="appartment__item col-md-4"><img src="/images/hotel-4.jpg" alt="hotel-1"></div>
-				<div class="appartment__item col-md-4"><img src="/images/hotel-5.jpg" alt="hotel-1"></div>
-				<div class="appartment__item col-md-4"><img src="/images/hotel-6.jpg" alt="hotel-1"></div>
-			</div>
-		</div>
-	</div>
-	<!-- END appartment -->
-	<!-- BEGIN transport -->
-	<div class="transport">
-		<div class="container-fluid">
-			<div class="transport__header">
-				<h2>Что с транспортом?</h2>
-				<p>Комфортабельный маленький автобус</p>
-				<div class="transport__row row">
-					<div class="transport__item auto">
-						<figure>
-							<img src="/images/bus-1.jpg" alt="transport-1">
-							<figcaption>30 мест</figcaption>
-						</figure>
-					</div>
-					<div class="transport__item auto-vip">
-						<figure>
-							<img src="/images/bus-2.jpg" alt="transport-2">
-							<figcaption>Маленький автобус</figcaption>
-						</figure>
-					</div>
-					<div class="transport__item auto-salon">
-						<figure>
-							<img src="/images/bus-3.jpg" alt="transport-3">
-							<figcaption>Комфортный салон</figcaption>
-						</figure>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- END transport -->
-	<!-- BEGIN route -->
-	<div class="route">
-		<div class="container">
-			<h2>Ваш маршрут</h2>
-			<div class="route__map">
-				<img src="/images/map.jpg" alt="map">
-			</div>
-		</div>
-	</div>
-	<!-- END route -->
-	<!-- BEGIN team -->
-	<div class="team">
-		<div class="container">
-			<h2>Наша команда</h2>
-			<div class="team__set">
-				<div class="col-card col-card-main col">
-					<div class="team__card team__card-main">
-						<i class="icon icon-pin-blue"></i>
-						<img src="/images/shorena.jpg" alt="shorena">
-						<div class="team__name team__name_blue">Шорена</div>
-						<div class="team__rank">Гид</div>
-						<p>Квалифицированный гид, проводит экскурсии по всей Грузии уже 7 лет. Постоянно исследует страну и открывает новые прикольные места</p>
-					</div>
-				</div>
-				<div class="col-card col-card-main col">
-					<div class="team__card team__card-main">
-						<i class="icon icon-pin-green"></i>
-						<img src="/images/nastia.jpg" alt="georg">
-						<div class="team__name team__name_green">Настя</div>
-						<div class="team__rank">Организатор</div>
-						<p>Заядлая путешественница, за плечами 20 стран. Организовывает авторские туры в Грузию и Азербайджан</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- END team -->
-	<!-- BEGIN info -->
-	<div class="info">
-		<div class="container">
-			<!-- BEGIN wait -->
-			<div class="wait">
-				<h2>Что вас ждёт?</h2>
-				<div class="wait__row row">
-					<div class="wait__col col-lg-6">
-						<div class="wait__item">
-							<span class="number">1</span>
-							<i class="icon icon-lake"></i>
-							<p>Увидите самые живописные и вкусные места Грузии: там не будет занудных музеев или полуразрушенных крепостей, от которых остались одни стены</p>
-						</div>
-						<div class="wait__item">
-							<span class="number">2</span>
-							<i class="icon icon-picture"></i>
-							<p>Получите кучу фоток с собой любимым на фоне всех красот Грузии</p>
-						</div>
-						<div class="wait__item">
-							<span class="number">3</span>
-							<i class="icon icon-hours"></i>
-							<p>Получите крутой трип без головной боли: за вас сделают абсолютно всё: (начиная от встречи в аэропорту и заканчивая завтраком перед отлётом)</p>
-						</div>
-					</div>
-					<div class="wait__col col-lg-6">
-						<div class="wait__item">
-							<span class="number">4</span>
-							<i class="icon icon-map"></i>
-							<p>Маршрут построен так, что захватывает всю Грузию. Одним махом посмотрите целую страну</p>
-						</div>
-						<div class="wait__item">
-							<span class="number">5</span>
-							<i class="icon icon-insurance"></i>
-							<p>Предоставляем страховку Tripinsurance, которая является провайдером швейцарской компании Allianz Global Assistance, имеющей прямые договоры с клиниками в Тбилиси и Батуми</p>
-						</div>
-						<div class="wait__item">
-							<span class="number">6</span>
-							<i class="icon icon-trophy"></i>
-							<p>У нас отели и транспорт отличного качества, душевный гид. И всё это по одной из самых низких цен на рынке</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- END wait -->
-			<!-- BEGIN price -->
-			<div class="price">
-				<p>Стоимость тура: 38 000 рублей</p>
-				<div class="price__baner">
-					первым десяти <span>28 000 рублей</span>
-				</div>
-				<p>Осталось <span class="border-red">3</span>
-					<br> места из <span class="border-blue">10</span></p>
-			</div>
-			<!-- END price -->
-			<!-- BEGIN include -->
-			<div class="include">
-				<h2>Что входит в стоимость:</h2>
-				<div class="include__set row">
-					<div class="include__item col-md-6 col-lg-4">
-						<span class="number">1</span>
-						<div class="include__data">
-							<i class="icon icon-air-transfer"></i>
-							<p>Трансфер из аэропорта и обратно</p>
-						</div>
-					</div>
-					<div class="include__item col-md-6 col-lg-4">
-						<span class="number">2</span>
-						<div class="include__data">
-							<i class="icon icon-hotel"></i>
-							<p>Проживание в 3 звездочных отелях</p>
-						</div>
-					</div>
-					<div class="include__item col-md-6 col-lg-4">
-						<span class="number">3</span>
-						<div class="include__data">
-							<i class="icon icon-restaurant"></i>
-							<p>Сытные завтраки</p>
-						</div>
-					</div>
-					<div class="include__item col-md-6 col-lg-4">
-						<span class="number">4</span>
-						<div class="include__data">
-							<i class="icon icon-leader"></i>
-							<p>Услуги гида</p>
-						</div>
-					</div>
-					<div class="include__item col-md-6 col-lg-4">
-						<span class="number">5</span>
-						<div class="include__data">
-							<i class="icon icon-van"></i>
-							<p>Транспорт</p>
-						</div>
-					</div>
-					<div class="include__item col-md-6 col-lg-4">
-						<span class="number">6</span>
-						<div class="include__data">
-							<i class="icon icon-jip"></i>
-							<p>Аренда джипов в Казбеги</p>
-						</div>
-					</div>
-					<div class="include__item col-md-6 col-lg-4">
-						<span class="number">7</span>
-						<div class="include__data">
-							<i class="icon icon-insurance"></i>
-							<p>Страховка компании Tripinsurance</p>
-						</div>
-					</div>
-					<div class="include__item col-md-6 col-lg-4">
-						<span class="number">8</span>
-						<div class="include__data">
-							<i class="icon icon-tickets"></i>
-							<p>Входящие билеты во все достопримечательности</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- END include -->
-			<!-- BEGIN exclude -->
-			<div class="exclude">
-				<h2>Что не входит в стоимость:</h2>
-				<div class="exclude__row">
-					<div class="exclude__item">
-						<div class="number">1</div>
-						<div class="exclude__data">
-							<i class="icon icon-air-tickets"></i>
-							<p>Билеты на самолет
-								<br> (помогаем оформить)</p>
-						</div>
-					</div>
-					<div class="exclude__item">
-						<div class="number">2</div>
-						<div class="exclude__data">
-							<i class="icon icon-supper"></i>
-							<p>Обеды и ужины</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- END exclude -->
-		</div>
-	</div>
-	<!-- END info -->
-	<!-- BEGIN choice -->
-	<div class="choice">
-		<div class="container">
-			<h2>Думаете, что самому поехать дешевле?</h2>
-			<div class="alone">
-				<div class="alone-row row">
-					<div class="alone__item col-6 col-md-3">
-						<i class="icon icon-bed"></i>
-						<p>Проживание
-							<br>40$/день</p>
-					</div>
-					<div class="alone__item col-6 col-md-3">
-						<i class="icon icon-restaurant-yellow"></i>
-						<p>Питание
-							<br>30$/день</p>
-					</div>
-					<div class="alone__item col-6 col-md-3">
-						<i class="icon icon-car"></i>
-						<p>Аренда машины
-							<br>40$/день</p>
-					</div>
-					<div class="alone__item col-6 col-md-3">
-						<i class="icon icon-leader-yellow"></i>
-						<p>Стоимость гида
-							<br>50$/день</p>
-					</div>
-				</div>
-				<div class="alone__extra">
-					<p>и это не включая страховку, трансфер и входные билеты в достопримечательности…</p>
-				</div>
-			</div>
-			<div class="cost">
-				<div class="cost__days">На 8 дней</div>
-				<div class="cost__alone">
-					Самому — 1 240 &#36;
-				</div>
-				<div class="cost__together">
-					<i class="icon icon-checked"></i> С нами — 450 &#36;
-				</div>
-			</div>
-			<div class="order">
-				<div class="order__question">
-					Остались вопросы?
-				</div>
-				<button class="order-link" type="button" data-toggle="modal" data-target="#modal" >Оставляйте заявку и я вам перезвоню</button>
-				<!-- <a href="https://m.me/558343917859998?ref=go" onclick="fbq('track', 'Lead');" class="order-link"> -->
-					
-				<!-- </a> -->
-			</div>
-		</div>
-	</div>
-	<!-- END choice -->
-	
-	<!-- BEGIN footer -->
-	<footer class="footer">
-		<div class="container">
-			<div class="footer__row">
-				<div class="social">
-					<a href="https://www.facebook.com/mirposmotrel" class="social__item">
-						<i class="icon icon-facebook"></i>
-					</a>
-					<a href="https://www.instagram.com/mirposmotrel/" class="social__item">
-						<i class="icon icon-instagram"></i>
-					</a>
-				</div>
-				<div class="phone">
-					7 (931) 9779155
-				</div>
-			</div>
-		</div>
-	</footer>
-	<div class="modal fade" tabindex="-1" role="dialog" id="modal">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-			<div class="modal-header">
-				<a class="close pull-right" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
-				<h4 class="modal-title">Записаться на&nbsp;тур</h4>
-			</div>
-			<div class="modal-body">
-				<form id="form" method="post" action="http://bot.nickvorobiov.com/order.php" data-toggle="validator">
-  <input type="hidden" name="trello-list-id" id="input-trello-list-id" value="5a9bc2794ff3b8bd9b000f30" />
-  <input type="hidden" name="redirect" id="input-redirect" value="https://m.me/558343917859998?ref=lead-grandtour" />
-  <input type="hidden" name="offer" id="input-offer" value="Гранд тур — заявка" />
-  <input type="hidden" name="traffic_source" />
-  <input type="hidden" name="roistat" />
-  <div class="help-block with-errors"></div>
-  <div class="form-group">
-    <label for="input-name" class="control-label">Имя</label>
-    <input id="input-name" required="required" name="name" type="text" class="form-control" placeholder="Иван Иванов">
-    <div class="help-block with-errors"></div>
-  </div>
-  <div class="form-group">
-    <label for="input-phone" class="control-label">Телефон</label>
-    <input id="input-phone" required="required" name="phone" type="text" class="form-control" placeholder="+7 921 765-43-21">
-    <div class="help-block with-errors"></div>
-  </div>
-  <button type="submit" class="btn-lg btn-primary btn-block form-btn">Записаться</button>
-</form>
+                <div class = "wys-item">
+                    <div class = "wys-img">
+                        <img src = "img/dost-2.png">
+                    </div>
+                    <div class = "wys-title">
+                        Грязевые вулканы
+                    </div>
+                </div>
 
-			</div>
-			</div>
-		</div>
-	</div>
+                <div class = "wys-item">
+                    <div class = "wys-img">
+                        <img src = "img/dost-3.png">
+                    </div>
+                    <div class = "wys-title">
+                        Храм огнепоклонников Атешгях, огненная гора Янардаг
 
-<!--noindex-->
+                    </div>
+                </div>
+
+                <div class = "wys-item">
+                    <div class = "wys-img">
+                        <img src = "img/dost-4.png">
+                    </div>
+                    <div class = "wys-title">
+                        Мечеть Гейдара Алиева
+                    </div>
+                </div>
+
+                <div class = "wys-item">
+                    <div class = "wys-img">
+                        <img src = "img/dost-5.png">
+                    </div>
+                    <div class = "wys-title">
+                        Наскальные рисунки в заповеднике Гобустан
+                    </div>
+                </div>
+
+                <div class = "wys-item">
+                    <div class = "wys-img">
+                        <img src = "img/dost-6.png">
+                    </div>
+                    <div class = "wys-title">
+                        Водопад Афурджа, Красный каньон
+                    </div>
+                </div>
+
+                <div class = "wys-item">
+                    <div class = "wys-img">
+                        <img src = "img/dost-7.png">
+                    </div>
+                    <div class = "wys-title">
+                        Древнее высокогорное село Хыналыг
+
+                    </div>
+                </div>
+
+                <div class = "wys-item">
+                    <div class = "wys-img">
+                        <img src = "img/dost-8.png">
+                    </div>
+                    <div class = "wys-title">
+                        Мавзолей Дири Баба в Шемахе
+                    </div>
+                </div>
+
+                <div class = "wys-item">
+                    <div class = "wys-img">
+                        <img src = "img/dost-9.png">
+                    </div>
+                    <div class = "wys-title">
+                        Ремесленническое поселение Лагич
+                    </div>
+                </div>
+
+                <div class = "wys-item">
+                    <div class = "wys-img">
+                        <img src = "img/dost-10.png">
+                    </div>
+                    <div class = "wys-title">
+                        Озеро Нохур, водопад Семь красавиц
+                    </div>
+                </div>
+
+                <div class = "wys-item">
+                    <div class = "wys-img">
+                        <img src = "img/dost-11.png">
+                    </div>
+                    <div class = "wys-title">
+                       Водопад Рам-рама и капельный водопад Мамырлы
+                    </div>
+                </div>
+
+                <div class = "wys-item">
+                    <div class = "wys-img">
+                        <img src = "img/dost-12.png">
+                    </div>
+                    <div class = "wys-title">
+                        Канатная дорога Туфандаг
+                    </div>
+                </div>
+            </div>
+
+            <div class = "d-flex ai-center jc-center">
+                <div class = "wys-button to-tour">
+                     Записаться на тур
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "container-fluid" id = "live">
+        <div class = "container">
+            <div class = "section-heading b">
+                Где будете проживать?
+            </div>
+            <div class = "section-desc">
+                Четырехзвездочный отель в Баку и пятизвездочный в Шеки. В вашем распоряжении двухместные номера <br> с односпальными кроватями.
+            </div>
+
+            <div class = "live-slider-container d-flex flex-col">
+                <div class = "live-slider-arrow-next">
+                    <i class = "fa fa-angle-right"></i>
+                </div>
+                <div class = "live-slider-arrow-prev">
+                    <i class = "fa fa-angle-left"></i>
+                </div>
+                <div class = "live-slider">
+                    <div class = "live-item">
+                        <img src = "img/85648789.jpg">
+                    </div>
+                    <div class = "live-item">
+                        <img src = "img/slider-4.jpg">
+                    </div>
+                    <div class = "live-item">
+                        <img src = "img/slider-2.jpg">
+                    </div>
+                    <div class = "live-item">
+                        <img src = "img/slider-3.jpg">
+                    </div>
+                    <div class = "live-item">
+                        <img src = "img/slider-5.jpg">
+                    </div>
+                </div>
+                <div class = "live-slider-pagination-container">
+                    <div class = "live-slider-pagination active" data-slide="0">
+                        <img src = "img/85648789.jpg">
+                    </div>
+                    <div class = "live-slider-pagination" data-slide="1">
+                        <img src = "img/slider-4.jpg">
+                    </div>
+                    <div class = "live-slider-pagination" data-slide="2">
+                        <img src = "img/slider-2.jpg">
+                    </div>
+                    <div class = "live-slider-pagination" data-slide="3">
+                        <img src = "img/slider-3.jpg">
+                    </div>
+                    <div class = "live-slider-pagination" data-slide="4">
+                        <img src = "img/slider-5.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "container-fluid" id = "transport">
+        <div class = "separator-top">
+            <img src = "img/separator-top.png">
+        </div>
+         <div class = "separator-bottom">
+            <img src = "img/separator-bottom.png">
+        </div>
+        <div class = "container">
+            <div class = "section-heading w">
+                Что с транспортом?
+            </div>
+            <div class = "section-desc w">
+                Комфортабельный микроавтобус Mercedes Benz Vip
+            </div>
+            <div class = "transport-cart">
+                <img src = "img/17193667_10202643290918791_183067506_o.jpg">
+                <div class = "transport-cart-title">
+                    Mercedes Benz Vip
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "container-fluid" id = "map">
+        <div class = "container">
+            <div class = "section-heading b">
+                Ваш маршрут
+            </div>
+            <div class = "map-map">
+                <img src = "img/map.png">
+            </div>
+        </div>
+        <div class = "map-lupe">
+            <img src = "img/map_lupe.png">
+        </div>
+    </div>
+
+    <div class = "container-fluid" id = "team">
+        <div class = "separator-top">
+            <img src = "img/separator-top.png">
+        </div>
+         <div class = "separator-bottom">
+            <img src = "img/separator-bottom.png">
+        </div>
+        <div class = "container">
+            <div class = "section-heading w">
+                Наша команда
+            </div>
+
+            <div class = "team-items-container d-flex flex-row ai-center jc-center">
+                <div class = "team-item b">
+                    <div class = "team-img">
+                        <img src = "img/8abc4675-59cc-4321-970e-c633970bbc7d.jpg">
+                    </div>
+                    <div class = "team-title">
+                        Турал
+                    </div>
+                    <div class = "team-prof b">
+                        Гид
+                    </div>
+                    <div class = "team-desc">
+                        Квалифицированный гид, объездил
+                        всю страну вдоль и поперек,
+                        за плечами 4 года экскурсионной работы.
+                        Патриот своей страны, неутомимый исследователь и поклонник
+                        ярких путешествий.
+                    </div>
+
+                </div>
+
+                <div class = "team-item g">
+                    <div class = "team-img">
+                        <img src = "img/kyanan.jpg">
+                    </div>
+                    <div class = "team-title">
+                        Кянан
+                    </div>
+                    <div class = "team-prof g">
+                        Фотограф
+                    </div>
+                    <div class = "team-desc">
+                        Два года в профессиональной фотографии, сейчас работает в студии Face Studio. Специализируется на портретной
+и пейзажной съемке.
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class = "nastya-container d-flex flex-row">
+                <div class = "nastya">
+                    <img src = "img/nastya.png">
+                    <div class = "nastya-title">
+                        Настя
+                    </div>
+                    <div class = "nastya-desc">
+                        Организатор тура
+                    </div>
+                </div>
+                <div class = "nastya-description">
+                    <div class = "nastya-desc-title">
+                        Настя: организатор
+                    </div>
+                    <div class = "nastya-desc-desc">
+                        Баку это красивый и теплый город, который сумел соединить в себе европейскую архитектуру и восточные традиции. В этом городе вы проведете целых два дня, потому что я знаю, вы просто не захотите его покидать.
+<br><br>
+Чтобы вы привезли домой хорошие фотографии, с вами в тур поедет профессиональный фотограф.
+<br><br>
+Глубинка Азербайджана припасла для вас неожиданные сюрпризы: глубокие нависающие каньоны, которые кажется вот-вот обрушатся на вас, далекие горные села, пустынные одинокие равнины и бурные водопады в ущельях.
+<br><br>
+Все это я хочу показать вам, и поэтому приглашаю в этот инстатур.
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "container-fluid" id = "what-you-wait">
+        <div class = "container">
+            <div class = "section-heading b">
+                Что вас ждет?
+            </div>
+            <div class = "wyw-items">
+                <div class = "wyw-item mr-15">
+                    <div class = "wyw-item-numb">
+                        1
+                    </div>
+                    <div class = "wyw-item-img">
+                        <img src = "img/wyw-1.png">
+                    </div>
+                    <div class = "wyw-item-desc">
+                        Увидите самые впечатляющие и живописные места Азербайджана: от грандиозной мечети Гейдара Алиева до самого высокого водопада страны Афурджи
+                    </div>
+                </div>
+
+                <div class = "wyw-item">
+                    <div class = "wyw-item-numb">
+                        2
+                    </div>
+                    <div class = "wyw-item-img">
+                        <img src = "img/wyw-2.png">
+                    </div>
+                    <div class = "wyw-item-desc">
+                        Получите крутой трип без головной боли:
+за вас сделают абсолютно всё (начиная
+от встречи в аэропорту и заканчивая завтраком перед отлетом)
+                    </div>
+                </div>
+
+                <div class = "wyw-item">
+                    <div class = "wyw-item-numb">
+                        3
+                    </div>
+                    <div class = "wyw-item-img">
+                        <img src = "img/wyw-3.png">
+                    </div>
+                    <div class = "wyw-item-desc">
+                        Получите кучу крутых фоток с собой любимым
+на фоне всех красот Азербайджана
+
+                    </div>
+                </div>
+
+                <div class = "wyw-item">
+                    <div class = "wyw-item-numb">
+                        4
+                    </div>
+                    <div class = "wyw-item-img">
+                        <img src = "img/wyw-4.png">
+                    </div>
+                    <div class = "wyw-item-desc">
+Маршрут построен так, что захватывает
+весь Азербайджан. Одним махом посмотрите
+целую страну                    </div>
+                </div>
+
+                <div class = "wyw-item">
+                    <div class = "wyw-item-numb">
+                        5
+                    </div>
+                    <div class = "wyw-item-img">
+                        <img src = "img/wyw-5.png">
+                    </div>
+                    <div class = "wyw-item-desc ml-10">
+У нас отели и транспорт отличного качества, профессиональный фотограф, душевный гид.
+И всё это по одной из самых низких цен на рынке                    </div>
+                </div>
+
+                <div class = "wyw-item">
+                    <div class = "wyw-item-numb">
+                        6
+                    </div>
+                    <div class = "wyw-item-img">
+                        <img src = "img/wyw-6.png">
+                    </div>
+                    <div class = "wyw-item-desc ml-15">
+Предоставляем страховку Tripinsurance,
+которая является провайдером швейцарской компании Allianz Global Assistance, имеющей прямые договоры с клиниками в Баку                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class = "container-fluid" id = "howto">
+        <div class = "separator-top">
+            <img src = "img/separator-top.png">
+        </div>
+         <div class = "separator-bottom">
+            <img src = "img/separator-bottom.png">
+        </div>
+
+        <div class = "container">
+            <div class = "section-heading w">
+                Как записаться на тур:
+            </div>
+
+            <div class = "howto-items">
+                 <div class = "howto-item">
+                     <div class = "howto-numb">
+                         1
+                     </div>
+                     <div class = "howto-img">
+                        <img src = "img/howto-1.png">
+                     </div>
+                     <div class = "howto-desc">
+                        Оставляете заявку на сайте
+                     </div>
+                 </div>
+
+                <div class = "howto-item">
+                     <div class = "howto-numb">
+                         2
+                     </div>
+                     <div class = "howto-img">
+                        <img src = "img/howto-2.png">
+                     </div>
+                     <div class = "howto-desc">
+                        Отвечаем на все ваши вопросы (если есть, конечно)
+                     </div>
+                 </div>
+
+                <div class = "howto-item">
+                     <div class = "howto-numb">
+                         3
+                     </div>
+                     <div class = "howto-img">
+                        <img src = "img/howto-3.png">
+                     </div>
+                     <div class = "howto-desc">
+                        Заключаем договор, вносите предоплату
+                     </div>
+                 </div>
+
+                <div class = "howto-item">
+                     <div class = "howto-numb">
+                         4
+                     </div>
+                     <div class = "howto-img">
+                        <img src = "img/howto-4.png">
+                     </div>
+                     <div class = "howto-desc">
+                        Прилетаете в Азербайджан и оплачиваете остаток
+                     </div>
+                 </div>
 
 
-<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '';</script>
+            </div>
 
-<!--/noindex-->
+            <div class = "d-flex ai-center jc-center">
+                <div class = "howto-button to-tour">
+                    Записаться на тур
+                </div>
+            </div>
+        </div>
+    </div>
 
-<!-- begin JS-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
+    <div class = "container-fluid" id = "cost">
+        <div class = "container">
+            <div class = "cost-title">
+                Стоимость тура: 39 000 рублей
+            </div>
+            <div class = "cost-title-button">
+                <img src = "img/first-ten.png">
+            </div>
 
-<script src="/js/jquery.magnific-popup.min.js"></script>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="position:absolute">
-    <symbol id="next" viewBox="0 0 30 30">
-        <path d="M20.1 14.6l-9.4-9.4c-.2-.2-.6-.2-.8 0-.2.2-.2.5 0 .8l9 9-9 9c-.2.2-.2.6 0 .8.1.1.2.2.4.2.1 0 .3-.1.4-.2l9.4-9.4c.2-.2.2-.6 0-.8z"></path>
-    </symbol>
-    <symbol id="prev" viewBox="0 0 30 30">
-        <path d="M9.9 15.4l9.4 9.4c.2.2.6.2.8 0s.2-.6 0-.8l-9-9 9-9c.2-.2.2-.6 0-.8-.1-.1-.2-.2-.4-.2-.1 0-.3.1-.4.2l-9.4 9.4c-.2.2-.2.6 0 .8z"></path>
-    </symbol>
-</svg>
-<script src="/js/libs.js "></script>
-<script src="/js/main.js?2018033010001522393255"></script>
-<!-- /END JS-->
+            <div class = "section-heading b">
+                Что входит в стоимость:
+            </div>
+
+            <div class = "cost-items">
+                <div class = "cost-item">
+                    <div class = "cost-numb">
+                        1
+                    </div>
+                    <div class = "cost-desc">
+                        <img src = "img/cost-1.png">
+                        <div class = "cost-desc-desc">
+                            Трансфер из аэропорта и обратно
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "cost-item">
+                    <div class = "cost-numb">
+                        2
+                    </div>
+                    <div class = "cost-desc">
+                        <img src = "img/cost-2.png">
+                        <div class = "cost-desc-desc">
+                            Проживание в 4 и 5 звездочных отелях
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "cost-item">
+                    <div class = "cost-numb">
+                        3
+                    </div>
+                    <div class = "cost-desc">
+                        <img src = "img/cost-3.png">
+                        <div class = "cost-desc-desc">
+                            Услуги профессионального фотографа
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "cost-item">
+                    <div class = "cost-numb">
+                        4
+                    </div>
+                    <div class = "cost-desc">
+                        <img src = "img/cost-4.png">
+                        <div class = "cost-desc-desc">
+                            Услуги гида
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "cost-item">
+                    <div class = "cost-numb">
+                        5
+                    </div>
+                    <div class = "cost-desc">
+                        <img src = "img/cost-5.png">
+                        <div class = "cost-desc-desc">
+                            Транспорт
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "cost-item">
+                    <div class = "cost-numb">
+                        6
+                    </div>
+                    <div class = "cost-desc">
+                        <img src = "img/cost-6.png">
+                        <div class = "cost-desc-desc">
+                            Аренда джипов в Хыналыг
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "cost-item">
+                    <div class = "cost-numb">
+                        7
+                    </div>
+                    <div class = "cost-desc">
+                        <img src = "img/cost-7.png">
+                        <div class = "cost-desc-desc">
+                            Страховка компании Tripinsurance
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "cost-item">
+                    <div class = "cost-numb">
+                        8
+                    </div>
+                    <div class = "cost-desc">
+                        <img src = "img/cost-8.png">
+                        <div class = "cost-desc-desc">
+                            Входящие билеты во все достопримечательности
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "cost-item">
+                    <div class = "cost-numb">
+                        9
+                    </div>
+                    <div class = "cost-desc">
+                        <img src = "img/cost-9.png">
+                        <div class = "cost-desc-desc">
+                            Сытные завтраки
+                        </div>
+                    </div>
+                </div>
 
 
-    <script src="/vendor/bootstrap/dist/toolkit.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.js"></script>
-  </body>
+            </div>
+
+            <div class = "section-heading b mt">
+                Что не входит <br> в стоимость:
+            </div>
+
+            <div class = "cost-not-items">
+
+                <div class = "cost-item">
+                    <div class = "cost-numb">
+                        1
+                    </div>
+                    <div class = "cost-desc">
+                        <img src = "img/cost-10.png">
+                        <div class = "cost-desc-desc">
+                            Билеты на самолет (помогаем оформить)
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "cost-item">
+                    <div class = "cost-numb">
+                        2
+                    </div>
+                    <div class = "cost-desc">
+                        <img src = "img/cost-11.png">
+                        <div class = "cost-desc-desc">
+                            Обед и ужин
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class = "container-fluid" id = "last">
+        <div class = "container">
+            <div class = "section-heading w">
+                Думаете, что самому поехать <br>дешевле?
+            </div>
+
+            <div class = "last-items">
+                <div class = "last-item">
+                    <img src = "img/last-1.png">
+                    <div class = "last-desc">
+                        Проживание <strong>50$/день</strong>
+                    </div>
+                </div>
+
+                <div class = "last-item">
+                    <img src = "img/last-2.png">
+                    <div class = "last-desc">
+                        Питание <strong>30$/день</strong>
+                    </div>
+                </div>
+
+                <div class = "last-item">
+                    <img src = "img/last-3.png">
+                    <div class = "last-desc">
+                        Аренда машины <strong>40$/день</strong>
+                    </div>
+                </div>
+
+                <div class = "last-item">
+                    <img src = "img/last-4.png">
+                    <div class = "last-desc">
+                        Стоимость гида <strong>50$/день</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "last-s-desc">
+                и это не включая фотографа, страховку, трансфер и входные билеты<br>
+в достопримечательности…
+            </div>
+
+            <div class = "last-s-title">
+На 6 дней
+            </div>
+
+            <div class = "last-tarif d-flex flex-row jc-center ai-center">
+                <div class = "last-tarif-item-n">
+                    <img src = "img/last-left.png">
+                </div>
+                <div class = "last-tarig-item-y">
+                    <img src = "img/last-right.png">
+                </div>
+            </div>
+
+            <div class = "section-heading w mobile-p">
+                Остались вопросы?
+            </div>
+
+            <div class = "d-flex ai-center jc-center">
+                <div class = "last-button to-tour">
+                    Оставляй заявку и я тебе перезвоню
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class = "d-flex ai-center">
+        <div>
+            <a href = "https://www.facebook.com/mirposmotrel/"><i class = "fa fa-facebook"></i></a>
+            <a href = "https://www.instagram.com/mirposmotrel/"><img src = "img/instagram.png"></a>
+        </div>
+        <a href = "tel:+79319779155" class = "tel">+7 (931) 977-91-55</a>
+    </footer>
+
+    <div id = "modal">
+        <div class = "modal-body">
+            <div class = "section-heading">Записаться на тур</div>
+            <span class = "label">Имя:</span>
+            <input placeholder="Имя">
+             <span class = "label">Телефон:</span>
+            <input placeholder = "+7 921 765-43-21">
+            <div class = "modal-button">
+                Записаться
+            </div>
+        </div>
+    </div>
+
+</body>
 </html>
