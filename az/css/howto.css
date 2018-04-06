@@ -1,0 +1,89 @@
+#howto{
+  background: url('../img/nightsky.png') no-repeat;
+  background-size: cover;
+}
+
+#howto .container{
+  padding-top: 120px;
+  height: 650px;
+}
+
+.howto-item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 320px;
+  margin-left: 50px;
+}
+
+.howto-numb{
+  font-size: 120px;
+  color: white;
+  font-family: acrobat;
+}
+
+.howto-items{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.howto-desc{
+  font-family: acrobat;
+  font-size: 18px;
+  color: white;
+}
+
+.howto-img{
+  padding: 0 20px 0 40px;
+}
+
+.howto-button{
+  color: white;
+  font-family: lifehack;
+  font-size: 38px;
+  border-bottom: 1px dashed white;
+  text-transform: uppercase;
+  margin-top: 70px;
+  cursor: pointer;
+}
+
+#howto .separator-top img,
+#howto .separator-bottom img{
+  display: none;
+}
+
+@media screen and (max-width: 450px){
+  #howto{
+    background-image: url('../img/nightsky-mobile.png') !important;
+  }
+  
+  .howto-item{
+    flex-direction: row !important;
+    margin-left: 0 !important;
+  }
+  
+  #howto .separator-top img{
+    display: block !important;
+    height: 50px !important;
+  }
+  
+  #howto .separator-top{
+    top: -2px;
+  }
+  
+  .howto-img{
+    padding: 10px;
+  }
+  
+  .howto-desc{
+    text-align: center;
+    padding: 0 10px;
+  }
+  
+  #howto .separator-bottom img{
+    display: block !important;
+    height: 50px !important;
+  }
+}

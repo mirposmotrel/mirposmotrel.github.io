@@ -1,0 +1,125 @@
+#what-you-see{
+  background: url(../img/castle.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 140px 0;
+}
+
+#what-you-see .container{
+  height: 1150px;
+}
+
+.wys-item{
+  max-width: 210px;
+  margin: 25px 15px;
+  border: 5px solid white;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  background: white;
+}
+
+.wys-item:hover{
+  transform: scale(1.15);
+}
+
+.wys-title{
+  background: white;
+  text-align: center;
+  padding: 20px 0;
+  font-family: acrobat;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+      height: 70px;
+    box-sizing: border-box;
+}
+
+.wys-img{
+  height: 172px;
+  position: relative;
+}
+
+.wys-item:hover{
+  box-shadow: 10px 10px 71px -9px rgba(0,0,0,0.75);
+}
+
+.wys-item:hover .wys-img:before{
+  display: block;
+}
+
+.wys-img:before{
+  display: none;
+  content: '';
+  background: url('../img/benocle.png') no-repeat;
+  width: 86px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wys-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wys-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  justify-content: center;
+}
+
+.wys-button{
+  border-bottom: 1px dashed white;
+  font-family: lifehack;
+  font-size: 38px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+  margin-top: 60px;
+  position: relative;
+}
+
+.wys-button:before,
+.wys-button:after{
+  position: absolute;
+  width: 294px;
+  height: 42px;
+  content: '';
+  left: -45px;
+}
+
+.wys-button:before{
+  background: url('../img/arr-top.png');
+  top: -52px;
+}
+
+.wys-button:after{
+  background: url('../img/arr-bottom.png');
+  bottom: -52px;
+}
+
+@media screen and (max-width: 450px){
+  #what-you-see {
+    background-image: url(../img/castle-mobile.png) !important;
+  }
+  
+  #what-you-see .section-heading.w{
+    padding-top: 0;
+  }
+  
+  #what-you-see .separator-top img{
+    display: block !important;
+    height: 50px !important;
+  }
+  
+  #what-you-see .separator-bottom img{
+    display: block !important;
+    height: 50px !important;
+  }
+}
