@@ -28,6 +28,43 @@
         </div>
     </header>
 
+    <div class = "container-fluid" id = "tour-date">
+        <div class = "section-heading b">
+            Даты тура
+        </div>
+
+        <div class = "container">
+            <div class = "col d-flex flex-col">
+                <div class = "date-item">
+                    <img src = "img/flower.png"> 20-27 мая
+                </div>
+                <div class = "date-item">
+                    <img src = "img/sun.png"> 10-17 июня
+                </div>
+                <div class = "date-item">
+                    <img src = "img/sun.png"> 24 июня-1 июля
+                </div>
+                <div class = "date-item">
+                    <img src = "img/sun.png"> 8-15 июля
+                </div>
+            </div>
+            <div class = "col d-flex flex-col">
+                <div class = "date-item">
+                    <img src = "img/sun.png"> 12-19 августа
+                </div>
+                <div class = "date-item">
+                    <img src = "img/mapple.png"> 2-9 сентября
+                </div>
+                <div class = "date-item">
+                    <img src = "img/mapple.png"> 7-14 октября
+                </div>
+                <div class = "date-item">
+                    <img src = "img/mapple.png"> 20-27 октября
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class = "container-fluid">
         <div class = "why-tour-left">
             <img src = "img/why-tour-left.png">
@@ -66,7 +103,7 @@
 
                 <div class = "wys-item">
                     <div class = "wys-img">
-                        <img src = "img/baku-2337485.jpg">
+                        <img src = "img/new_baku.jpg">
                     </div>
                     <div class = "wys-title">
                         Баку
@@ -121,10 +158,10 @@
 
                 <div class = "wys-item">
                     <div class = "wys-img">
-                        <img src = "img/gora-be.jpg">
+                        <img src = "img/baku-2337485.jpg">
                     </div>
                     <div class = "wys-title">
-                        Гора Бешбармак
+                        Центр Гейдара Алиева
 
                     </div>
                 </div>
@@ -797,6 +834,47 @@
             font-size: 25px;
         }
     }
+
+    #tour-date{
+        margin-top: -125px;
+        position: relative;
+        z-index: -1;
+        padding: 120px 0;
+        background: url(img/travel-3258154_1920.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #tour-date .container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #tour-date .col{
+        flex: 1;
+    }
+
+    .date-item{
+        font-size: 50px;
+        font-family: nautilus;
+        color: #333333;
+        margin: 10px 0;
+    }
+
+    .date-item img {
+        margin-right: 30px;
+    }
+
+    .why-insta-sep{
+        position: absolute;
+        left: 0;
+        height: 30px;
+        width: 100%;
+        z-index: 5;
+        top: -30px;
+        object-fit: fill;
+    }
+
 </style>
 
         <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
